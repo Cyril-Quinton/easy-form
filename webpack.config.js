@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'formx.js',
-    library: 'formx',
+    filename: 'easyForm.js',
+    library: 'easyForm',
 
     path: path.resolve(__dirname, 'dist')
   },
@@ -13,7 +13,12 @@ module.exports = {
       {
         test: /(\.js)$/,
         loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/
+        exclude: /(node_modules|bower_components)/,
+        query: {
+            cacheDirectory: true,
+            plugins: ["transform-decorators-legacy"],
+            presets: ['es2015']
+        }
       },
       {
         test: /(\.jsx|\.js)$/,

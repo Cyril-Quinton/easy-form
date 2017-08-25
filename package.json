@@ -1,5 +1,5 @@
 {
-  "name": "formx",
+  "name": "easy-form",
   "version": "1.0.0",
   "description": "A tool to build complex forms.",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cyriled/formx.git"
+    "url": "git+https://github.com/Cyriled/easy-form.git"
   },
   "keywords": [
     "\"form\""
@@ -17,12 +17,13 @@
   "author": "Cyril Quinton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Cyriled/formx/issues"
+    "url": "https://github.com/Cyriled/easy-form/issues"
   },
-  "homepage": "https://github.com/Cyriled/formx#readme",
+  "homepage": "https://github.com/Cyriled/easy-form#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^4.5.0",
