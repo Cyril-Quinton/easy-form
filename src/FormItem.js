@@ -50,7 +50,7 @@ export class FormItem {
     if (!this.parent) {
       return this.name;
     }
-    return this.parent.id + "_" + this.name;
+    return this.parent.id + "/" + this.name;
   }
 
   set isCurrent(bool) {
@@ -63,6 +63,10 @@ export class FormItem {
 
   setValue(val) {
     this.value = val;
+  }
+
+  getValue() {
+    return this.answerMap.get(this.id);
   }
 
   toArray(array) {

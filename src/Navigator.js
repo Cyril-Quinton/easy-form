@@ -32,14 +32,18 @@ export class Navigator {
         return null;
     }
 
-    // @computed hasNextLeaf() {
-    //     return this.nextLeaf != null;
-    // }
-
-    goToNext() {
+    goToNextLeaf() {
         if (this.hasNextLeaf()) {
             this.currentItem = this.nextLeaf();
         }
+    }
+
+    goTo(path) {
+        const currentItem = this.formItem.toArray().find(item => item.id === path);
+        if (!currentItem) {
+            throw new Error("path '" + path + "' does not exist");
+        }
+        this.currentItem = currentItem;
     }
 
 
