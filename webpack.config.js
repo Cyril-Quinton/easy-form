@@ -15,9 +15,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /(node_modules|bower_components)/,
         query: {
-            cacheDirectory: true,
-            plugins: ["transform-decorators-legacy"],
-            presets: ['es2015']
+            cacheDirectory: true
         }
       },
       {
